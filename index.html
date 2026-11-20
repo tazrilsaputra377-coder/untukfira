@@ -1,0 +1,317 @@
+
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<meta name="theme-color" content="#300d27">
+<title>For My Love ❤️</title>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(160deg,#160817,#511633,#a83264);
+  color: white;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+#intro {
+  position: fixed;
+  inset: 0;
+  z-index: 10;
+  background: linear-gradient(160deg,#1b071b,#7b2451,#c34478);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 25px;
+  transition: 1s;
+}
+
+.intro-box {
+  width: 100%;
+  max-width: 400px;
+}
+
+.big-heart {
+  font-size: 90px;
+  animation: beat 1s infinite;
+}
+
+@keyframes beat {
+  50% {transform: scale(1.2)}
+}
+
+#intro h1 {
+  font-size: 30px;
+  margin: 20px 0;
+}
+
+#intro p {
+  font-size: 15px;
+  color: #ffd6e6;
+  line-height: 1.7;
+}
+
+button {
+  border: none;
+  border-radius: 40px;
+  background: linear-gradient(45deg,#ff4e91,#ff83b3);
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 16px 30px;
+  box-shadow: 0 0 20px #ff4e91;
+  cursor: pointer;
+  margin-top: 25px;
+  min-height: 50px;
+}
+
+#main {
+  display: none;
+  text-align: center;
+  padding: 35px 18px 20px;
+  animation: fade 1.5s;
+}
+
+@keyframes fade {
+  from {opacity:0; transform:translateY(25px)}
+  to {opacity:1; transform:translateY(0)}
+}
+
+.top {
+  font-size: 12px;
+  letter-spacing: 3px;
+  color: #ffc0d9;
+}
+
+.title {
+  font-size: 30px;
+  margin: 18px 0 10px;
+  color: #ffb6d2;
+  text-shadow: 0 0 15px #ff4e91;
+}
+
+.subtitle {
+  font-size: 14px;
+  color: #ffdaea;
+  line-height: 1.7;
+}
+
+.photo {
+  width: 190px;
+  height: 190px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid #ff9dc4;
+  box-shadow: 0 0 30px #ff4e91;
+  margin: 28px 0 15px;
+  animation: float 3s infinite ease-in-out;
+}
+
+@keyframes float {
+  50% {transform: translateY(-12px)}
+}
+
+.love {
+  font-size: 25px;
+  color: #ffb5d3;
+  margin: 15px 0;
+  font-weight: bold;
+}
+
+.card {
+  width: 100%;
+  max-width: 500px;
+  margin: 25px auto;
+  padding: 25px 20px;
+  background: rgba(255,255,255,.10);
+  border: 1px solid rgba(255,255,255,.15);
+  border-radius: 22px;
+  box-shadow: 0 5px 30px rgba(0,0,0,.15);
+}
+
+.card h2 {
+  color: #ffb6d2;
+  font-size: 21px;
+  margin-bottom: 18px;
+}
+
+.card p {
+  color: #ffe4ef;
+  font-size: 14px;
+  line-height: 2;
+}
+
+.music {
+  width: 100%;
+  max-width: 500px;
+  margin: 25px auto;
+  padding: 20px 15px;
+  background: rgba(255,255,255,.10);
+  border-radius: 20px;
+}
+
+.music h2 {
+  color: #ffb6d2;
+  margin-bottom: 10px;
+}
+
+.music iframe {
+  width: 100%;
+  height: 152px;
+  border: 0;
+  border-radius: 12px;
+  margin-top: 15px;
+}
+
+.heart {
+  position: fixed;
+  bottom: -30px;
+  animation: fly 7s linear forwards;
+  pointer-events: none;
+  z-index: 5;
+}
+
+@keyframes fly {
+  0% {transform:translateY(0) rotate(0);opacity:0}
+  20% {opacity:1}
+  100% {transform:translateY(-110vh) rotate(360deg);opacity:0}
+}
+
+footer {
+  padding: 30px 10px;
+  font-size: 13px;
+  color: #ffc4dc;
+}
+
+@media (min-width:600px) {
+  #main {padding-top:50px}
+  .title {font-size:40px}
+  .photo {width:230px;height:230px}
+  .card {padding:30px}
+}
+</style>
+</head>
+
+<body>
+
+<div id="intro">
+  <div class="intro-box">
+    <div class="big-heart">❤️</div>
+    <h1>Hai Firaaa!</h1>
+    <p>Ada sesuatu yang spesial untuk kamu.<br>
+    Aku harap kamu suka dengan ini.</p>
+    <button onclick="openLove()">BUKA PESAN CINTA 💌</button>
+  </div>
+</div>
+
+<div id="main">
+
+  <div class="top">A LITTLE GIFT FOR YOU</div>
+
+  <h1 class="title">For My Love ❤️</h1>
+
+  <p class="subtitle">
+    Untuk seseorang yang selalu ada di hatiku.
+  </p>
+
+  <img src="https://cdn.discordapp.com/attachments/1386746746771603456/1573238005123129384/file_00000000fc248211b066a5c20bb4f064.png?ex=6b014791&is=6afff611&hm=82240f46d15bd5daab732fae269a9b9622c031464d27e11e33166b7903abb158&" class="photo" alt="Foto kesayangan">
+
+  <div class="love">I LOVE YOU 💗</div>
+
+  <div class="card">
+    <h2>💌 Surat Untukmu</h2>
+    <p>
+      Hai firaa...
+      <br><br>
+      Aku mungkin bukan orang yang sempurna,
+      tapi aku selalu ingin menjadi seseorang
+      yang bisa membuat kamu bahagia.
+      <br><br>
+      Terima kasih sudah hadir dalam hidupku.
+      Terima kasih sudah membuat hari-hariku
+      menjadi lebih indah.
+      ❤️
+    </p>
+  </div>
+
+  <div class="music">
+    <h2>🎵 Lagu Kita</h2>
+    <p>Dewa 19 - Aku Milikmu</p>
+
+    <iframe
+      src="https://open.spotify.com/embed/track/5JESuE80fvausWHjcT9QVh?utm_source=generator&theme=0"
+      allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+      loading="lazy">
+    </iframe>
+
+    <p style="font-size:12px;margin-top:12px;color:#ffd6e6">
+      Tekan Play untuk mendengarkan lagu kita ❤️
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>🌹 Aku Memilihmu</h2>
+    <p>
+      Dari banyaknya manusia di dunia,
+      aku bersyukur bisa mengenal kamu.
+      <br><br>
+      Semoga cerita kita tidak berhenti
+      sampai di sini.
+      <br><br>
+      I LOVE YOU FOREVER ❤️
+    </p>
+    <div style="font-size:35px;margin-top:15px">💗🌹💗</div>
+  </div>
+
+  <footer>
+    Made with ❤️<br>
+    Especially for you.
+  </footer>
+
+</div>
+
+<script>
+function openLove() {
+  const intro = document.getElementById("intro");
+
+  intro.style.opacity = "0";
+
+  setTimeout(() => {
+    intro.style.display = "none";
+    document.getElementById("main").style.display = "block";
+    window.scrollTo(0,0);
+    startHearts();
+  }, 1000);
+}
+
+function startHearts() {
+  setInterval(() => {
+    const h = document.createElement("div");
+    h.className = "heart";
+
+    const symbols = ["❤️","💗","💕","💖","🌹"];
+    h.innerHTML = symbols[Math.floor(Math.random()*symbols.length)];
+
+    h.style.left = Math.random()*95 + "vw";
+    h.style.fontSize = (15+Math.random()*20)+"px";
+    h.style.animationDuration = (5+Math.random()*4)+"s";
+
+    document.body.appendChild(h);
+
+    setTimeout(() => h.remove(),9000);
+  },500);
+}
+</script>
+
+</body>
+</html>
